@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/main_content"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 tools:context="bubblebearapps.co.uk.nfcapi.MainActivity">
+
+  <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.TabLayout
+      android:id="@+id/TabLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:paddingBottom="0dp"
+      android:paddingTop="0dp"
+      android:background="?attr/colorPrimary"
+      local:tabTextColor="@color/lightGray"
+      local:tabSelectedTextColor="@color/white"
+  />
+
+  </android.support.v4.view.ViewPager>
+  <android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    
+    android:src="@android:drawable/ic_dialog_email" />
+</android.support.design.widget.CoordinatorLayout>

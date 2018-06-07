@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Mealo</string>
+  <string name="Food">Name</string>
+  <string name="Temperature">Temperature</string>
+  <string name="Time">HH:MM or number of minutes</string>
+  <string name="AddToMeal">Add To Meal</string>
+  <string name="AddItem">Add item</string>
+  <string name="CookNow">Start cooking</string>
+  <string name="CancelCooking">Cancel cooking</string>
+</resources>

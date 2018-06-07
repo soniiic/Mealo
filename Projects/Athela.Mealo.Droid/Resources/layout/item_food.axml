@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textSize="20dp"
+      android:gravity="left|center_vertical"
+      android:paddingRight="16dp"
+      android:singleLine="true"
+      android:layout_weight="1"
+      android:text="Pizza"
+      local:MvxBind="Text Name, Mode=OneWay" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textSize="20dp"
+      android:gravity="center_horizontal|center_vertical"
+      android:singleLine="true"
+      android:layout_gravity="right"
+      android:text="230°"
+      local:MvxBind="Text Format('{0}°', Temperature), Mode=OneWay" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textSize="20dp"
+      android:gravity="center_horizontal|center_vertical"
+      android:paddingLeft="16dp"
+      android:singleLine="true"
+      android:layout_gravity="right"
+      android:text="2h 34m"
+      local:MvxBind="Text Format('{0:0}:{1:00}', Time.Hours, Time.Minutes), Mode=OneWay" />
+</LinearLayout>

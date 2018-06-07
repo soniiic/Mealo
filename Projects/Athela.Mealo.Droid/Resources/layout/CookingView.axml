@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+  <Mvx.MvxListView
+      android:id="@+id/milestone_list"
+      local:MvxItemTemplate="@layout/item_milestone"
+      local:MvxBind="ItemsSource Milestones; Visible ShowMilestones"
+      android:listSelector="@android:color/transparent"
+      android:cacheColorHint="@android:color/transparent"
+      android:paddingTop="16dp"
+      android:dividerHeight="0dp"
+      android:divider="@null"
+      android:scrollbars="vertical"
+      android:choiceMode="singleChoice"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_gravity="left|start"
+      android:layout_weight="1"
+      android:gravity="top"
+      android:background="#FFFFFF" />
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="left|start"
+    android:layout_weight="1"
+    android:scaleType="fitCenter"
+    android:src="@drawable/sleeping_oven"
+    android:padding="100dp"
+    local:MvxBind="Visible ShowMilestones, Converter=Invert" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:weightSum="1"
+      android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        local:MvxBind="Click CancelCookingCommand"
+        android:text="@string/CancelCooking" />
+  </LinearLayout>
+</LinearLayout>

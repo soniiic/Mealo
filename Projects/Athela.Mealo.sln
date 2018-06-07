@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athela.Mealo.Core", "Athela.Mealo.Core\Athela.Mealo.Core.csproj", "{63B80DA5-A5C7-4531-83F9-7881302A228E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athela.Mealo.Droid", "Athela.Mealo.Droid\Athela.Mealo.Droid.csproj", "{BE195BD7-CB31-4526-A5C7-2D8374A6553F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63B80DA5-A5C7-4531-83F9-7881302A228E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B80DA5-A5C7-4531-83F9-7881302A228E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B80DA5-A5C7-4531-83F9-7881302A228E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B80DA5-A5C7-4531-83F9-7881302A228E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE195BD7-CB31-4526-A5C7-2D8374A6553F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

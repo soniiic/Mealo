@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:minHeight="70dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            local:MvxBind="Visible IsFirst, Converter=Invert"
+            android:background="@drawable/connector_bg" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            local:MvxBind="Visible IsFirst" />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/temperature_circle"
+            android:layout_marginTop="-1dp" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/connector_bg"
+            local:MvxBind="Visible IsLast, Converter=Invert"
+            android:layout_marginTop="-1dp" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/connector_bg"
+            local:MvxBind="Visible IsLast, Converter=Invert"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="15:30"
+                android:textStyle="bold"
+                local:MvxBind="Text Format('{0:00}:{1:00}', StartTime.Hour, StartTime.Minute), Mode=OneTime" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="14m"
+                local:MvxBind="Text FormattedCookingTime, Mode=OneTime; Visible IsLast, Converter=Invert, Mode=OneTime" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:text="Eggs and something long long olnaosdfasoinbd sadhi sah dishdosihads ad"
+                local:MvxBind="Text ItemsToStartCooking, Mode=OneTime" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:gravity="left"
+                android:text="200°"
+                local:MvxBind="Text Format('{0}°', Temperature), Mode=OneTime; Visible IsLast, Converter=Invert, Mode=OneTime" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
